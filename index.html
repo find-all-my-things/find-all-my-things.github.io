@@ -198,7 +198,7 @@
           <tr>
             <td align=center width=100px><center><span style="font-size:28px"><a href="#">[Paper]</a></span></center></td>
             <td align=center width=100px><center><span style="font-size:28px"><a href="https://www.youtube.com/watch?v=o7Q9-uF8Is4" target="_blank">[Video]</a></span></center></td>
-            <td align=center width=100px><center><span style="font-size:28px"><a href="https://forms.gle/tKgoXFXMuXfVT8Zu8">[Request Code]</a></span></center></td>
+            <td align=center width=100px><center><span style="font-size:28px"><a href="https://forms.gle/tKgoXFXMuXfVT8Zu8">[Code]</a></span></center></td>
           <tr/>
       </table><br/>
 
@@ -213,7 +213,7 @@
           Efficient navigation and search in unknown environments for multiple objects is a fundamental challenge in robotics, particularly in applications such as warehouse automation, domestic assistance, and search-and-rescue. The Multi-Object Search (MOS) problem involves finding an optimal sequence of locations to maximize the probability of discovering target objects while minimizing travel costs. In this paper, we introduce a novel approach to the MOS problem, called Finder, which leverages vision language models (VLM) to locate multiple objects across diverse environments. Specifically, our approach combines semantic mapping with spatio-probabilistic reasoning and adaptive planning. We enhance object recognition and scene understanding through the integration of VLM, constructing an episodic semantic map to guide efficient exploration based on multiple object goals. Our extensive experiments in both simulated and real-world environments demonstrate Finder's superior performance compared to existing multi-object search methods using deep reinforcement learning and VLM. Additional ablation and scalability studies highlight the importance of our design choices in addressing the inherent uncertainty and complexity of the MOS problem.
       </div>
       <br><hr>
-      <center><h1>Multi-Object Search</h1></center>
+      <center><h1>The Finder Architecture</h1></center>
       <div style="width:800px; margin:0 auto; text-align:justify">
         The proposed model, <i>Finder</i>, consists of four core modules: Object Detector, Spatial Map Generator, Score Map Generator, and Exploration Planner. The Object Detector identifies scene and target objects using YOLOv7 and Grounding-DINO, generating segmentation masks and determining the closest points in 3D space. The Spatial Map Generator creates occupancy and semantic maps from RGB and depth images to represent the environment. The Score Map Generator computes scene-to-object and object-to-object correlation scores, fusing them into a unified score map that guides exploration. The Exploration Planner selects frontiers based on utility scores, combining correlation scores and distance to unexplored areas, and navigates the robot using A* and Timed Elastic Band planners. This approach efficiently tracks and reasons about multiple objects in complex environments.
       </div><br/>
