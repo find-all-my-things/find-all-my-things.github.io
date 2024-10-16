@@ -108,7 +108,6 @@
     margin-right: 30px;
     margin-bottom: 5px;
   }
-
   .vert-cent {
     position: relative;
       top: 50%;
@@ -125,6 +124,29 @@
   #authors td {
     padding-bottom:5px;
     padding-top:30px;
+  }
+
+  /* ClusterMaps widget styles */
+  #clustrmaps-widget-container {
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+    margin: 30px auto; /* Centers the container horizontally and adds vertical margin */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #clustrmaps-widget-container script {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile styles */
+  @media only screen and (max-width: 600px) {
+    #clustrmaps-widget-container {
+      max-width: 200px; /* Smaller size for mobile devices */
+    }
   }
 </style>
 <!-- ======================================================================= -->
